@@ -50,12 +50,16 @@ header .header--btn {
     background-color: var(--gold);
     border: none;
     border-radius: 8px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(17, 12, 46, 0.12) 0px 4px 8px 0px;
     font-size: var(--body-text);
     font-weight: 400;
     text-decoration: none;
     color: var(--black);
     padding: 8px 24px;
+}
+.btn-main:hover {
+    cursor: pointer;
+    background-color: hsl(39,32%,59%, 0.8);
 }
 main {
     width: 100%;
@@ -86,11 +90,28 @@ h1 {
     line-height: 4.8rem;
     color: var(--black);
 }
-.about-info-container p {
+h2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    color: var(--black);
+}
+h3 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    color: var(--black);
+}
+.about-info-container p,
+.skills-tyes-container p {
     font-size: var(--body-text);
     font-weight: 400;
     line-height: 2.4rem;
     color: var(--black-body);
+}
+.about-info-container p {
     margin: 24px 0;
 }
 .about-image-container {
@@ -107,6 +128,39 @@ h1 {
     height: auto;
 }
 
+
+.skills-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+}
+.skills-tyes-container {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 6;
+    gap: 40px;
+    padding-top: 40px;
+}
+.skills-tyes-container figure {
+    margin-bottom: 12px;
+}
+.skills-tyes-container p {
+    margin: 8px 0;
+}
+.skills-tyes-container a {
+    font-size: var(--body-text);
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-decoration: none;
+    color: var(--gold);
+}
+.skills-tyes-container a:hover {
+    cursor: pointer;
+    color: hsl(39,32%,59%, 0.8);
+}
 
 footer {
     width: 100%;
@@ -137,7 +191,8 @@ footer .footer-container {
     cursor: pointer;
     text-decoration: none;
 }
-.footer-social-container figure {
+.footer-social-container figure,
+.skills-tyes-container figure {
     width: 48px;
     height: 48px;
     display: flex;
@@ -146,7 +201,13 @@ footer .footer-container {
     background-color: var(--gold);
     border-radius: 50px;
 }
-.footer-social-container figure i {
+.footer-social-container figure:hover,
+.skills-tyes-container figure:hover {
+    cursor: pointer;
+    background-color: hsl(39,32%,59%, 0.8);
+}
+.footer-social-container figure i,
+.skills-tyes-container figure i {
     font-size: 3.2rem;
     line-height: 1rem;
     color: var(--gray);
@@ -165,5 +226,8 @@ footer .footer-container {
 .footer-info-container a {
     text-decoration: none;
     color: var(--gold);
+}
+.footer-info-container a:hover {
     cursor: pointer;
+    color: hsl(39,32%,59%, 0.8);
 }
