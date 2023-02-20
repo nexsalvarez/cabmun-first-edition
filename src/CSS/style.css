@@ -2,7 +2,7 @@
     --black: hsl(0,0%,20%);
     --black-body: hsl(0,0%,20%,0.8);
     --white: hsl(0,100%,100%);
-    --white-elevation: hsl(0,100%,100%,0.8);
+    --white-elevation: hsl(0,100%,100%,0.32);
     --gold: hsl(39,32%,59%);
     --gray: hsl(0,0%,80%);
     --body-text: 1.6rem;
@@ -105,7 +105,8 @@ h3 {
     color: var(--black);
 }
 .about-info-container p,
-.skills-tyes-container p {
+.skills-tyes-container p,
+.cta-container p {
     font-size: var(--body-text);
     font-weight: 400;
     line-height: 2.4rem;
@@ -161,7 +162,34 @@ h3 {
     cursor: pointer;
     color: hsl(39,32%,59%, 0.8);
 }
-
+.cta-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-content: center;
+    padding: 40px 0;
+}
+.cta--content {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-elevation);
+    border-radius: 24px;
+    border: 2px solid hsl(0,100%,100%,0.12);
+    box-shadow: rgba(17, 12, 46, 0.12) 0px 4px 8px 0px;
+    padding: 40px;
+}
+.cta-tittle {
+    text-align: center;
+}
+.cta-container p {
+    margin: 16px 0 24px 0;
+    text-align: center;
+}
 footer {
     width: 100%;
     height: auto;
