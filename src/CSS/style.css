@@ -37,6 +37,10 @@ header picture {
     height: auto;
     grid-column: 1;
 }
+header picture img {
+    width: 70px;
+    height: auto;
+}
 header .header--btn {
     width: auto;
     height: auto;
@@ -127,6 +131,7 @@ h3 {
 .about-image-container img {
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 .committees-container {
     position: relative;
@@ -179,6 +184,15 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+.committees-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
 .info-cabmun {
     max-width: 420px;
     height: auto;
@@ -187,7 +201,7 @@ h3 {
     gap: 12px;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 24px;
 }
 .info-cabmun img {
     width: 100%;
