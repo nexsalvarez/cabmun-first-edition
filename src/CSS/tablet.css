@@ -1,0 +1,19 @@
+.about-container {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+}
+.about-info-container {
+    grid-row: auto;
+    grid-column: 1;
+}
+.about-image-container {
+    grid-row: auto;
+    grid-column: 2;
+}
+.skills-tyes-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.footer-social-container figure {
+    margin-bottom: 16px;
+}

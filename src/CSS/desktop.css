@@ -1,0 +1,32 @@
+.about-container {
+    min-height: 90vh;
+    gap: 80px;
+}
+h1 {
+    font-size: 7.2rem;
+    line-height: 8rem;
+}
+.committees-content {
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skills-tyes-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.cta--content {
+    padding: 40px 200px;
+}
+footer .footer-container {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 3fr;
+}
+.footer-social-container {
+    grid-row: auto;
+    grid-column: 1;
+}
+.footer-info-container {
+    grid-row: auto;
+    grid-column: 2;
+}
